@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Tribute</title>
+</head>
+
+<body>
+    <main id="main">
+        <article>
+            <header>
+                <div class="header--title">
+                    <h1 id="title"><span>Roberto Clemente</span></h1>
+                    <p>A Puerto Rican Legend</p>
+                </div>
+                <figure id="img-div">
+                    <img srcset="images/robertoclemente_480x251.jpg 480w,
+                    images/robertoclemente_800x419.jpg 800w,
+                    images/robertoclemente_1200x628.jpg 1200w" sizes="(min-width:1220px)  1200px,
+                    (min-width: 900px) 800px, (max-width:500px) 480px" src="images/robertoclemente_800x419.jpg"
+                        alt="Roberto Clemente stands ready to swing his bat" id="image" class="full-width">
+                    <figcaption id="img-caption">Roberto Clemente stands at home plate at the ready</figcaption>
+                </figure>
+            </header>
+
+            <section id="timeline">
+                <div id="tribute-info" class="flex-parent">
+                    <h2>Life and Highlights, <span>1950–1970s</span></h2>
+                    <div class="input-flex-container">
+                        <input type="radio" name="timeline-dot" data-description="1955" checked>
+                        <div class="dot-info" data-description="1955">
+                            <span class="year">1955</span>
+                            <span class="label">Rookie Year</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1960">
+                        <div class="dot-info" data-description="1960">
+                            <span class="year">1960</span>
+                            <span class="label">Pirates win the World Series</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1961">
+                        <div class="dot-info" data-description="1961">
+                            <span class="year">1961</span>
+                            <span class="label">All-Star Game</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1966">
+                        <div class="dot-info" data-description="1966">
+                            <span class="year">1966</span>
+                            <span class="label">National League MVP</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1967">
+                        <div class="dot-info" data-description="1967">
+                            <span class="year">1967</span>
+                            <span class="label">Final NL Batting Title</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1971">
+                        <div class="dot-info" data-description="1971">
+                            <span class="year">1971</span>
+                            <span class="label">World Series clutch win</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1972-1">
+                        <div class="dot-info" data-description="1972-1">
+                            <span class="year">1972</span>
+                            <span class="label">During Season</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1972-2">
+                        <div class="dot-info" data-description="1972-2">
+                            <span class="year">1972</span>
+                            <span class="label">Disaster and Death</span>
+                        </div>
+                        <input type="radio" name="timeline-dot" data-description="1973">
+                        <div class="dot-info" data-description="1973">
+                            <span class="year">1973</span>
+                            <span class="label">Hall of Fame</span>
+                        </div>
+                        <div id="timeline-descriptions-wrapper">
+                            <p data-description="1955">Clemente debuted with the Pirates on April 17, 1955, wearing
+                                uniform number 13, in the first game of a doubleheader against the Brooklyn Dodgers.
+                                <b>Despite racial and ethnic tensions, as well as sniping by the local media and some
+                                    teammates</b>. Clemente responded by saying "I don't believe in color." He noted
+                                that, during his upbringing, he was taught never to discriminate against someone based
+                                on ethnicity.</p>
+                            <p data-description="1960">The Pittsburgh Pirates win the World Series. Clemente led the
+                                league with a .353 batting average, and the 14 extra-base hits and 25 RBIs recorded in
+                                May alone. <b>Clemente feels slighted after finishing 8th in the National League Most
+                                    Valuable Player voting</b>.</p>
+                            <p data-description="1961">With the American League (AL) ahead 4–3 in the 10th inning, <b>he
+                                    teamed with fellow future Hall of Famers Hank Aaron, Willie Mays, and Frank Robinson
+                                    to engineer a come-from-behind 5–4 National League (NL) victory</b>, culminating in
+                                Clemente's walk-off single off knuckleballer Hoyt Wilhelm. Clemente started again in
+                                right field for the second All-Star game held that season and was 0 for 2, flying and
+                                grounding out in the 2nd and 4th innings. <b>Clemente records 27 outfield assists and
+                                    wins the first of 12 consecutive Gold Gloves for his defensive play in right
+                                    field</b>. Clemente also leads the National League in batting, finishing the season
+                                with a .351 average.</p>
+                            <p data-description="1966">In what is widely considered his best season, <b>Clemente wins
+                                    the National League Most Valuable Player award</b>. He hits .317 with 29 home runs
+                                and 119 runs batted in.</p>
+                            <p data-description="1967">Clemente wins his fourth (and final) NL batting title with a .357
+                                average.</p>
+                            <p data-description="1971">The Pirates won the NL East, <b>defeated the San Francisco Giants
+                                    in four games to win the NL pennant, and faced the Baltimore Orioles in the World
+                                    Series</b>. Clemente hits safely in all seven games, including a <b>pivotal home run
+                                    in Game 7</b>. <b>He is named the World Series Most Valuable Player</b>.</p>
+                            <p data-description="1972-1">Clemente doubles against the New York Mets in his last game of
+                                the season (He also made the annual NL All-Star roster for the twelfth time, he played
+                                in 14/15 All-Star games, and won his twelfth consecutive Gold Glove), marking career hit
+                                3,000. <b>He is the first Latin player and just the 11th in baseball history (at that
+                                    time) to reach the milestone</b>. He dedicates the hit to "the Pittsburgh fans and
+                                to the people in Puerto Rico."</p>
+                            <p data-description="1972-2">A devastating earthquake hits Managua, Nicaragua. Clemente
+                                decides to gather relief supplies and help deliver them to quake survivors. Later that
+                                week,<b>the plane Clemente charters for his humanitarian mission crashes into the ocean
+                                    shortly after takeoff, killing the baseball star and four crew members</b>.</p>
+                            <p data-description="1973">In an unprecedented move, The Baseball Hall of Fame unanimously
+                                waives the customary five-year period for induction, allowing the Baseball Writers
+                                Association of America to hold a special election on Clemente's behalf. <b>Clemente is
+                                    inducted into Baseball's Hall of Fame. He is the first Latin-born player so
+                                    honored.</b>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <p id="closing">
+                Built with ♥ by Rafael. Come check out more of my work on my <a
+                    href="https://rescriba01.github.io/react-portfolio-resume/" target="_blank">page</a>.<br> For more
+                about Roberto Clemente check out his <a id="tribute-link"
+                    href="https://en.wikipedia.org/wiki/Roberto_Clemente" target="_blank">Wiki</a> or his <a
+                    href="https://www.npr.org/2006/04/30/5369952/a-roberto-clemente-timeline" target="_blank">NPR
+                    timeline</a>.<br> Timeline credit to <a href="https://codepen.io/cjl750">@cjl750</a> on Codepen.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
