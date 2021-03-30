@@ -290,11 +290,11 @@ input[data-description="1973"]:checked~#timeline-descriptions-wrapper p[data-des
   }
 
   input::before {
-    left: calc(-6vw + 26.5px);
+    left: calc(-4vw + 12.5px);
   }
 
   input::after {
-    right: calc(-6vw + 26.5px);
+    right: calc(-4vw + 12.5px);
   }
 
   .dot-info {
