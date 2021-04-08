@@ -1,0 +1,1 @@
+class Image{constructor(t,s,a){this.src=t,this.alt=s,this.id=a}}export default Image;

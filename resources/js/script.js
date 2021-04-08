@@ -1,27 +1,12 @@
-// TODO:Create a function that changes the image to coincide with the selection on the timeline
-
-/**
- * Dynamically change the image to coincide with a the checking of one of the radio buttons.
- */
-
-// Image class
-class Image {
-    constructor(
-        // Defines parameters:
-        src,
-        alt,
-    ) {
-    }
-}
-
-
+import imageObjectArray from "./components/data";
+//TODO: Figure out how to loop through image object array and tie the generation of a new figure to the click event of the timeline
 /**
  * addFigure function
  * - Receives dataObj
  * - Creates <figure> <img> <figcaption>
  * - Returns <figure>
  */
-const addFigure = (dataObj) => {
+const replaceFigure = (dataObj) => {
     let newFigure = document.createElement("figure");
     let newImg = document.createElement("img");
     newImg.setAttribute("src", dataObj.image);
@@ -32,7 +17,9 @@ const addFigure = (dataObj) => {
     return newFigure;
 };
 
-const updateImage = function () {
-    let tributeImg = document.querySelector("#img-div");
 
-}
+
+// const createImage = function () {
+//     let tributeImg = document.querySelector("#img-div");
+//
+// }
