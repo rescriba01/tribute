@@ -1,1 +1,0 @@
-// TODO:Create a function that changes the image to coincide with the selection on the timeline
