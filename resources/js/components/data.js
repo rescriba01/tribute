@@ -1,6 +1,6 @@
 // Import my Image class so I can create image objects
 
-import Image from "./components/Image.js";
+import Image from "../components/Image.js";
 
 const rookieImg = new Image(
     "resources/image/clemente-rookie-1955.jpg",
