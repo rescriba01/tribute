@@ -25,11 +25,41 @@ const nlMvpImg = new Image(
     "Roberto Clemente stands with bat ready to swing",
     "image4"
 );
-//TODO: Add the rest of the image objects and add to the array.
+
+const battingTitleImg = new Image(
+    "resources/image/battingtitle-1967_750×1021.jpg",
+    "Clemente after a hard swing releasing bat as he prepares to run",
+    "image5"
+);
+
+const worldSeries1971Img = new Image(
+    "resources/image/worldseries-1971_600×462.jpg",
+    "Clemente takes practice swings before the final game of the '71 World Series",
+    "image6"
+);
+
+const careerHitImg = new Image(
+    "resources/image/hitclub3000-1972_320×400.jpg",
+    "Clemente stands at base raising his hat and the text on the image indicates his 3000th hit.",
+    "image7"
+);
+
+const newspaperHeadlineImg = new Image(
+    "resources/image/newspaperarticle-1972_400×582.jpg",
+    "Headline in a New York newspaper of the accident that took Roberto Clemente's life",
+    "image8"
+);
+
+const hallOfFameImg = new Image(
+    "resources/image/halloffame-1973_545×459.jpg",
+    "Clemente's wife Vera wipes away tears as she attends Roberto Clemente's induction posthumously into the Baseball Hall Of Fame",
+    "image9"
+);
+
 
 
 // Add image objects into an array
-const imageObjectArray = [rookieImg, worldSeries1Img, allstarImg, nlMvpImg, ];
+const imageObjectArray = [rookieImg, worldSeries1Img, allstarImg, nlMvpImg, battingTitleImg, worldSeries1971Img, careerHitImg, newspaperHeadlineImg, hallOfFameImg];
 
 // Export the array to be used in other files
 export default imageObjectArray;
