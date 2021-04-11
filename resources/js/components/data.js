@@ -21,7 +21,7 @@ const allstarImg = new Image(
 );
 
 const nlMvpImg = new Image(
-    "resources/image/NLMVP-1966_1193x1500.jpg",
+    "resources/image/NLMVP-1966_1193×1500.jpg",
     "Roberto Clemente stands with bat ready to swing",
     "image4"
 );

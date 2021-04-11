@@ -29,12 +29,14 @@ const figureContent = imageObjectArray.map((image) => {
 //TODO: Get figure location. Figure out how to add the event listener and decide which image goes with which radio button press
 // this is the reference I am using: /Users/rescribano/Downloads/javascript-essential-training-2832077-main/08_16/script.js
 
-const switchFigure = (figureContent) => {
+const switchFigure = () => {
     // Get the header
     const header = document.querySelector("header");
 
     // Get all the input elements within the timeline element
     const radio = document.querySelectorAll("input");
+
+    figureContent.forEach(element => console.log(element))
 };
 
 /**
