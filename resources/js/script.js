@@ -1,5 +1,11 @@
 import imageObjectArray from "../js/components/data.js";
 
+// Get the header
+const header = document.querySelector("header");
+
+// Get the current figure element
+const original = document.querySelector("#img-div");
+
 // Map through image array and create a new array
 const figureContent = imageObjectArray.map((image) => {
     // Image should now hold single Image object
@@ -27,34 +33,23 @@ const figureContent = imageObjectArray.map((image) => {
 });
 
 //TODO: Get figure location. Figure out how to add the event listener and decide which image goes with which radio button press
-// this is the reference I am using: /Users/rescribano/Downloads/javascript-essential-training-2832077-main/08_16/script.js
+// this is the reference I am using: Downloads/javascript-essential-training-2832077-main/08_16/script.js
 
 const switchFigure = () => {
-    // Get the header
-    const header = document.querySelector("header");
-
-    // Get all the input elements within the timeline element
+    // Get all the input elements within the timeline element as a Node List
     const radio = document.querySelectorAll("input");
+    // Create an array from the Node list using Array.from() method https://attacomsian.com/blog/javascript-convert-nodelist-to-array
+    const radioArr = Array.from(radio)
 
-    figureContent.forEach(element => console.log(element))
+    radioArr.map((input) => {
+        // each radio button should now be mapped to input
+        console.log("made it before the listener");
+        input.addEventListener("click", (event) => {
+            // Check the id of the element
+            let hook = input.getAttribute(input.id);
+            console.log(hook);
+        });
+    });
 };
 
-/**
- * addFigure function
- * - Receives image
- * - Creates <figure> <img> <figcaption>
- * - Returns <figure>
- */
-/*
-function replaceFigure() {
-    let newFigure = document.createElement("figure");
-    let newImg = document.createElement("img");
-    newImg.setAttribute("src", image.src);
-    newImg.setAttribute("alt", image.alt);
-    let newDesc = document.createElement("figcaption");
-    newDesc.innerText = image.alt;
-    newFigure.append(newImg, newDesc);
-    return newFigure;
-}
-
-return replaceFigure();*/
+switchFigure();
