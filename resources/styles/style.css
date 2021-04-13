@@ -83,7 +83,8 @@ figure {
   margin-top: 1rem;
 }
 
-.image {
+.image,
+.tribute__figure {
   display: block;
   max-width: 100%;
   margin: 0 auto;
