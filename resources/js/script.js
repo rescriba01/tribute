@@ -1,7 +1,7 @@
 import imageObjectArray from "../js/components/data.js";
 
-//TODO: Figure out how to match the created figure from the figureContent with the appropriate radio button press.
-// reference: Downloads/javascript-essential-training-2832077-main/08_16/script.js
+// TODO: Figure out to switch back and forth between images when radio button is clicked
+//reference: Downloads/javascript-essential-training-2832077-main/08_16/script.js
 
 const swapFigure = () => {
 
