@@ -16,19 +16,19 @@ const worldSeries1Img = new Image(
 
 const allstarImg = new Image(
     "resources/image/all-star-1961_640x513.jpg",
-    "From Left to Right: Roberto Clemente, Willie Mays, and Hank Aaron udring All-Star '61",
+    "From Left to Right: Roberto Clemente, Willie Mays, and Hank Aaron during All-Star '61",
     "image3"
 );
 
 const nlMvpImg = new Image(
-    "resources/image/NLMVP-1966_1193×1500.jpg",
-    "Roberto Clemente stands with bat ready to swing",
+    "resources/image/NLMVP-1966_720x905.jpg",
+    "Roberto Clemente posed close up at bat",
     "image4"
 );
 
 const battingTitleImg = new Image(
     "resources/image/battingtitle-1967_750×1021.jpg",
-    "Clemente after a hard swing releasing bat as he prepares to run",
+    "Clemente after a hard swing poised to run for first base",
     "image5"
 );
 
