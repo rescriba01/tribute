@@ -47,7 +47,7 @@ const swapFigure = () => {
 
 
     // Get original figure element
-    let originalFig = document.querySelector("#img-div");
+    let currentFig = document.querySelector("#img-div");
 
 
     // event listener for click
@@ -59,7 +59,8 @@ const swapFigure = () => {
                     let radioId = radio[i].getAttribute("id");
                     let radioSliced = radioId.slice(0, 6)
                     if (tributeId === radioSliced) {
-                        originalFig.replaceWith(tributes[j])
+                        currentFig.replaceWith(tributes[j]);
+                        currentFig = tributes[j];
                         console.log(tributes[j])
                     }
                 }
