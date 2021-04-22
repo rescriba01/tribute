@@ -1,8 +1,5 @@
 import imageObjectArray from "../js/components/data.js";
 
-// TODO: Figure out to switch back and forth between images when radio button is clicked
-//reference: Downloads/javascript-essential-training-2832077-main/08_16/script.js
-
 const swapFigure = () => {
 
     // Map through image array and create a new array
@@ -31,10 +28,6 @@ const swapFigure = () => {
 
     });
 
-    // Get header
-    const header = document.querySelector("header");
-
-
     // Create an array of the new figures
     const tributes = [...figureContent];
 
@@ -61,7 +54,6 @@ const swapFigure = () => {
                     if (tributeId === radioSliced) {
                         currentFig.replaceWith(tributes[j]);
                         currentFig = tributes[j];
-                        console.log(tributes[j])
                     }
                 }
             });
