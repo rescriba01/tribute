@@ -44,7 +44,7 @@ const swapFigure = () => {
 
 
     // event listener for click
-    function swap() {
+    function swapContentEvent() {
         for (let i = 0; i < radioArr.length; i++) {
             radioArr[i].addEventListener("click", function () {
                 for (let j = 0; j < tributes.length; j++) {
@@ -60,7 +60,7 @@ const swapFigure = () => {
         }
     }
 
-    swap();
+    swapContentEvent();
 };
 
 swapFigure();
