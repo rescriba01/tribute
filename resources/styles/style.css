@@ -190,6 +190,9 @@ input:checked::before {
 input:checked::after {
     background-color: #ffba49;
 }
+input:checked::after:last-child {
+    background-color: #333;
+}
 
 input:checked ~ input,
 input:checked ~ input::before,
