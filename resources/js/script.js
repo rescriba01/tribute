@@ -16,9 +16,12 @@ const swapFigure = () => {
         let newImg = document.createElement("img");
         newImg.setAttribute("src", image.src);
         newImg.setAttribute("alt", image.alt);
+        newImg.classList.add("tribute__image");
+        
         // Create figcaption element to populate the figure
         let newDesc = document.createElement("figcaption");
         newDesc.innerText = image.alt;
+        newDesc.classList.add("tribute__caption");
 
         // Add created elements to the figure
         tributeFigure.append(newImg, newDesc);
