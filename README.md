@@ -44,6 +44,15 @@ The build process:
 
 The output is placed in the `dist` directory, ready for deployment.
 
+## Deployment
+
+This project is automatically deployed to GitHub Pages using the built-in GitHub Actions workflow (`pages-build-deployment`). When changes are pushed to the main branch, GitHub Actions:
+
+1. Builds the project
+2. Deploys the built files to GitHub Pages
+
+The live site can be viewed at: https://rescriba01.github.io/tribute/
+
 ## File Size Comparison
 
 | File Type | Original Size | Minified Size | Reduction |
@@ -51,11 +60,7 @@ The output is placed in the `dist` directory, ready for deployment.
 | CSS       | 7.8 KB        | 5.3 KB        | 32%       |
 | JavaScript| 4.7 KB        | 2.5 KB        | 47%       |
 
-## Deployment
-
-The contents of the `dist` directory can be deployed to any static hosting service.
-
 ## Credits
 
-- Timeline concept credit to [@cjl750](https://codepen.io/cjl750) on Codepen
+- Timeline design credit to [@cjl750](https://codepen.io/cjl750) on Codepen
 - Build system created with Node.js, PostCSS, and Terser

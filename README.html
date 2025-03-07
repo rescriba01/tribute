@@ -5,11 +5,103 @@
 </head>
 <body>
 
-<h1 id="tributetorobertoclemente">Tribute to Roberto Clemente</h1>
+<h1 id="robertoclementetributepage">Roberto Clemente Tribute Page</h1>
 
-<p>Simple one-page static site using HTML5, CSS3, and vanilla JavaScript.</p>
+<p>A tribute page for Roberto Clemente, a Puerto Rican baseball legend, featuring a timeline of his life and career highlights.</p>
 
-<p>Timeline customized from codepen created by <a href="https://codepen.io/cjl750">@cjl750</a>.</p>
+<h2 id="projectstructure">Project Structure</h2>
+
+<ul>
+<li><code>index.html</code> - Main HTML file</li>
+<li><code>resources/styles/style.css</code> - CSS styles</li>
+<li><code>resources/js/</code> - JavaScript files</li>
+<li><code>resources/image/</code> - Image assets</li>
+</ul>
+
+<h2 id="development">Development</h2>
+
+<p>This project uses vanilla HTML, CSS, and JavaScript.</p>
+
+<h2 id="buildprocess">Build Process</h2>
+
+<p>This project uses npm scripts to build and minify assets:</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+<li>Node.js (v16+)</li>
+<li>npm</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<pre><code class="bash">npm install
+</code></pre>
+
+<h3 id="buildcommands">Build Commands</h3>
+
+<ul>
+<li><code>npm run build</code> - Build the project (minify CSS and JS, copy assets to dist folder)</li>
+<li><code>npm run clean</code> - Remove the dist folder</li>
+</ul>
+
+<h3 id="buildoutput">Build Output</h3>
+
+<p>The build process:</p>
+
+<ol>
+<li>Minifies CSS using PostCSS and cssnano</li>
+<li>Minifies JavaScript using Terser</li>
+<li>Copies all necessary assets to the <code>dist</code> folder</li>
+<li>Updates HTML references to point to minified files</li>
+</ol>
+
+<p>The output is placed in the <code>dist</code> directory, ready for deployment.</p>
+
+<h2 id="deployment">Deployment</h2>
+
+<p>This project is automatically deployed to GitHub Pages using the built-in GitHub Actions workflow (<code>pages-build-deployment</code>). When changes are pushed to the main branch, GitHub Actions:</p>
+
+<ol>
+<li>Builds the project</li>
+<li>Deploys the built files to GitHub Pages</li>
+</ol>
+
+<p>The live site can be viewed at: <a href="https://rescriba01.github.io/tribute/">https://rescriba01.github.io/tribute/</a></p>
+
+<h2 id="filesizecomparison">File Size Comparison</h2>
+
+<table>
+<thead>
+<tr>
+<th>File Type</th>
+<th>Original Size</th>
+<th>Minified Size</th>
+<th>Reduction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSS</td>
+<td>7.8 KB</td>
+<td>5.3 KB</td>
+<td>32%</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>4.7 KB</td>
+<td>2.5 KB</td>
+<td>47%</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="credits">Credits</h2>
+
+<ul>
+<li>Timeline design credit to <a href="https://codepen.io/cjl750">@cjl750</a> on Codepen</li>
+<li>Build system created with Node.js, PostCSS, and Terser</li>
+</ul>
 
 </body>
 </html>
