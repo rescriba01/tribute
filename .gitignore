@@ -1,2 +1,17 @@
-/.DS_Store
-/config.codekit3
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+package-lock.json
+
+# Build output
+dist/
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
